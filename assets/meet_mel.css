@@ -1,0 +1,74 @@
+#meet_mel_image {
+    height: auto;
+    width: auto;
+    max-width: 256px;
+    max-height: 256px;
+}
+
+body p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.5em;
+}
+
+section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+section ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2vw;
+    padding: 0 0 20px 0;
+}
+
+section li {
+    padding: 0 20px 20px;
+}
+
+#first ul {
+    flex-direction: column;
+}
+
+#second ul {
+    flex-direction: column-reverse;
+}
+
+#my-mission {
+    padding: 0 0 30px;
+}
+
+#third ul {
+    flex-direction: column;
+}
+
+#fifth p {
+    text-align: center;
+    padding: 0 0 40px;
+    font-size: 1.8em;
+}
+
+@media only screen and (min-device-width: 768px) {
+    section ul {
+        margin: 0 20vw;
+    }
+
+    #first ul {
+        flex-direction: row;
+    }
+
+    #second ul {
+        flex-direction: row;
+    }
+
+    #third ul {
+        flex-direction: row;
+    }
+
+    #fifth p {
+        font-size: 2em;
+    }
+}
